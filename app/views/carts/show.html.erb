@@ -18,7 +18,9 @@
                         <h6><strong><%= item.price%> <span class="text-muted">x</span></strong></h6>
                     </div>
                     <div class="col-xs-4 col-md-4"><%= item.quantity %></div>
-                    <div class="col-xs-2 col-md-2"></div>
+                    <div class="col-xs-2 col-md-2">
+                        <%= link_to 'Distroy', @orders, method: :delete, remote: :true %>
+                    </div>
                 </div>
             </div>
             <hr>
